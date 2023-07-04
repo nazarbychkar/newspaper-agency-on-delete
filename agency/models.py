@@ -7,6 +7,8 @@ class Topic(models.Model):
 
     class Meta:
         ordering = ["name"]
+        verbose_name = "topic"
+        verbose_name_plural = "topics"
 
     def __str__(self):
         return self.name
